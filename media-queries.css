@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1014px) {
+	html {
+		font-size: 35px;
+	}
+	.info_copyright {
+	margin-top: -27px;
+}
+}
+
+@media only screen and (max-width: 785px) {
+	html {
+		margin: -2em auto;
+		font-size: 30px;
+	}
+	.info_copyright {
+	margin-top: -30px;
+}
+}
+
+@media only screen and (max-width: 680px) {
+	html {
+		margin: -2em auto;
+		font-size: 25px;
+	}
+	.info_copyright {
+	margin-top: -37px;
+}
+}

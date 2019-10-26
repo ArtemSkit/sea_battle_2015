@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Sea Battle</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="media-queries.css">
+	<script src="bower_components/jquery/jquery.min.js"></script>
+	<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+</head>
+
+<body>
+	<audio class="splash">
+		<source src="media/water_splash_002.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio class="hit">
+		<source src="media/explosion%20(1).mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio class="kill">
+		<source src="media/time_bomb.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio class="background_sounds" preload="auto" autoplay loop>
+		<source src="media/background1.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio class="victory">
+		<source src="media/war_horn.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio class="defeat">
+		<source src="media/comedy_sequence_fall_impact.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<img src="media/images/9042405197_98f86279af_h.jpg" alt="" class="para">
+	<main>
+
+		<div class="my_field field">
+			<div class="tile" data-tilenum="1">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="2">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="3">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="4">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="5">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="6">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="7">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="8">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="9">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="10">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="11">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="12">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="13">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="14">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="15">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="16">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="17">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="18">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="19">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="20">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="21">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="22">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="23">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="24">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="25">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="26">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="27">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="28">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="29">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="30">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="31">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="32">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="33">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="34">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="35">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="36">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="37">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="38">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="39">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="40">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="41">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="42">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="43">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="44">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="45">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="46">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="47">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="48">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="49">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="50">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="51">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="52">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="53">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="54">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="55">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="56">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="57">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="58">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="59">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="60">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="61">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="62">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="63">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="64">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="65">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="66">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="67">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="68">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="69">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="70">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="71">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="72">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="73">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="74">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="75">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="76">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="77">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="78">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="79">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="80">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="81">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="82">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="83">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="84">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="85">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="86">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="87">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="88">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="89">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="90">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="91">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="92">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="93">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="94">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="95">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="96">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="97">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="98">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="99">
+				<div class="in_tile"></div>
+			</div>
+			<div class="tile" data-tilenum="100">
+				<div class="in_tile"></div>
+			</div>
+		</div>
+		<div class="oponent_field field">
+			<div class="tile" data-tilenum="1"></div>
+			<div class="tile" data-tilenum="2"></div>
+			<div class="tile" data-tilenum="3"></div>
+			<div class="tile" data-tilenum="4"></div>
+			<div class="tile" data-tilenum="5"></div>
+			<div class="tile" data-tilenum="6"></div>
+			<div class="tile" data-tilenum="7"></div>
+			<div class="tile" data-tilenum="8"></div>
+			<div class="tile" data-tilenum="9"></div>
+			<div class="tile" data-tilenum="10"></div>
+			<div class="tile" data-tilenum="11"></div>
+			<div class="tile" data-tilenum="12"></div>
+			<div class="tile" data-tilenum="13"></div>
+			<div class="tile" data-tilenum="14"></div>
+			<div class="tile" data-tilenum="15"></div>
+			<div class="tile" data-tilenum="16"></div>
+			<div class="tile" data-tilenum="17"></div>
+			<div class="tile" data-tilenum="18"></div>
+			<div class="tile" data-tilenum="19"></div>
+			<div class="tile" data-tilenum="20"></div>
+			<div class="tile" data-tilenum="21"></div>
+			<div class="tile" data-tilenum="22"></div>
+			<div class="tile" data-tilenum="23"></div>
+			<div class="tile" data-tilenum="24"></div>
+			<div class="tile" data-tilenum="25"></div>
+			<div class="tile" data-tilenum="26"></div>
+			<div class="tile" data-tilenum="27"></div>
+			<div class="tile" data-tilenum="28"></div>
+			<div class="tile" data-tilenum="29"></div>
+			<div class="tile" data-tilenum="30"></div>
+			<div class="tile" data-tilenum="31"></div>
+			<div class="tile" data-tilenum="32"></div>
+			<div class="tile" data-tilenum="33"></div>
+			<div class="tile" data-tilenum="34"></div>
+			<div class="tile" data-tilenum="35"></div>
+			<div class="tile" data-tilenum="36"></div>
+			<div class="tile" data-tilenum="37"></div>
+			<div class="tile" data-tilenum="38"></div>
+			<div class="tile" data-tilenum="39"></div>
+			<div class="tile" data-tilenum="40"></div>
+			<div class="tile" data-tilenum="41"></div>
+			<div class="tile" data-tilenum="42"></div>
+			<div class="tile" data-tilenum="43"></div>
+			<div class="tile" data-tilenum="44"></div>
+			<div class="tile" data-tilenum="45"></div>
+			<div class="tile" data-tilenum="46"></div>
+			<div class="tile" data-tilenum="47"></div>
+			<div class="tile" data-tilenum="48"></div>
+			<div class="tile" data-tilenum="49"></div>
+			<div class="tile" data-tilenum="50"></div>
+			<div class="tile" data-tilenum="51"></div>
+			<div class="tile" data-tilenum="52"></div>
+			<div class="tile" data-tilenum="53"></div>
+			<div class="tile" data-tilenum="54"></div>
+			<div class="tile" data-tilenum="55"></div>
+			<div class="tile" data-tilenum="56"></div>
+			<div class="tile" data-tilenum="57"></div>
+			<div class="tile" data-tilenum="58"></div>
+			<div class="tile" data-tilenum="59"></div>
+			<div class="tile" data-tilenum="60"></div>
+			<div class="tile" data-tilenum="61"></div>
+			<div class="tile" data-tilenum="62"></div>
+			<div class="tile" data-tilenum="63"></div>
+			<div class="tile" data-tilenum="64"></div>
+			<div class="tile" data-tilenum="65"></div>
+			<div class="tile" data-tilenum="66"></div>
+			<div class="tile" data-tilenum="67"></div>
+			<div class="tile" data-tilenum="68"></div>
+			<div class="tile" data-tilenum="69"></div>
+			<div class="tile" data-tilenum="70"></div>
+			<div class="tile" data-tilenum="71"></div>
+			<div class="tile" data-tilenum="72"></div>
+			<div class="tile" data-tilenum="73"></div>
+			<div class="tile" data-tilenum="74"></div>
+			<div class="tile" data-tilenum="75"></div>
+			<div class="tile" data-tilenum="76"></div>
+			<div class="tile" data-tilenum="77"></div>
+			<div class="tile" data-tilenum="78"></div>
+			<div class="tile" data-tilenum="79"></div>
+			<div class="tile" data-tilenum="80"></div>
+			<div class="tile" data-tilenum="81"></div>
+			<div class="tile" data-tilenum="82"></div>
+			<div class="tile" data-tilenum="83"></div>
+			<div class="tile" data-tilenum="84"></div>
+			<div class="tile" data-tilenum="85"></div>
+			<div class="tile" data-tilenum="86"></div>
+			<div class="tile" data-tilenum="87"></div>
+			<div class="tile" data-tilenum="88"></div>
+			<div class="tile" data-tilenum="89"></div>
+			<div class="tile" data-tilenum="90"></div>
+			<div class="tile" data-tilenum="91"></div>
+			<div class="tile" data-tilenum="92"></div>
+			<div class="tile" data-tilenum="93"></div>
+			<div class="tile" data-tilenum="94"></div>
+			<div class="tile" data-tilenum="95"></div>
+			<div class="tile" data-tilenum="96"></div>
+			<div class="tile" data-tilenum="97"></div>
+			<div class="tile" data-tilenum="98"></div>
+			<div class="tile" data-tilenum="99"></div>
+			<div class="tile" data-tilenum="100"></div>
+		</div>
+		<div class="stash_field field">
+			<p class="instructions">To begin the round, drag ships on the field, and click Next.</p>
+			<!--	<p class="instractions">Чтобы начать раунд </br>перетащите корабли </br>на поле и нажмите </br>Далее.</p>-->
+			<div class="one_P_wrap_V vert_wrap wrap" data-shiptype="10">
+				<div class="one_P_ship_V vert_ship ship" data-shiptype="10">
+					<div class="in_paluba"></div>
+					<div class="paluba"></div>
+				</div>
+			</div>
+			<div class="two_P_wrap_V vert_wrap wrap" data-shiptype="21">
+				<div class="two_P_ship_V vert_ship ship" data-shiptype="21">
+					<div class="in_paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+				</div>
+			</div>
+			<div class="three_P_wrap_V vert_wrap wrap" data-shiptype="31">
+				<div class="three_P_ship_V vert_ship ship" data-shiptype="31">
+					<div class="in_paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+				</div>
+			</div>
+			<div class="four_P_wrap_V vert_wrap wrap" data-shiptype="41">
+				<div class="four_P_ship_V vert_ship ship" data-shiptype="41">
+					<div class="in_paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+				</div>
+			</div>
+			<div class="two_P_wrap_G goriz_wrap wrap" data-shiptype="20">
+				<div class="two_P_ship_G goriz_ship ship" data-shiptype="20">
+					<div class="in_paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+				</div>
+			</div>
+			<div class="three_P_wrap_G goriz_wrap wrap" data-shiptype="30">
+				<div class="three_P_ship_G goriz_ship ship" data-shiptype="30">
+					<div class="in_paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+				</div>
+			</div>
+			<div class="four_P_wrap_G goriz_wrap wrap" data-shiptype="40">
+				<div class="four_P_ship_G goriz_ship ship" data-shiptype="40">
+					<div class="in_paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+					<div class="paluba"></div>
+				</div>
+			</div>
+			<input type="button" class="auto" name="auto" value="Auto Positioning">
+			<input type="button" class="clear_my_field" name="clear_my_field" value="Clear">
+			<input type="button" class="next" name="next" value="Next">
+		</div>
+		<div class="del_border"></div>
+	</main>
+	<div class="settings_overlay"></div>
+	<div class="settings_off" data-glif="A">
+		<div class="menu_wrap">
+			<div class="settings_off_switch">B</div>
+			<ul class="settings_list">
+				<li class="sound_switch">C</li>
+				<li class="language_switch">Eng</li>
+				<li class="para_switch">Parallax</li>
+			</ul>
+		</div>
+	</div>
+	<input type="button" class="give_up" name="next" value="Give up">
+	<div class="counter"><span class="win">0</span>:<span class="loose">0</span></div>
+	<div class="win_alert">VICTORY!!! <br /> <br /> Long live the Captain!!!</div>
+	<div class="loose_alert">Defeat. <br /> <br /> <br /> Next time you should prepare better...</div>
+	<div class="info_copyright">i <span>Sound effects from http://www.freesfx.co.uk</span></div>
+	<script src="bower_components/jquery_ui_touch_punch/punch.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
